@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>    
+    <meta charset="utf-8">
+    <meta name="description" content="SAMS">
+    <meta name="keywords" content="Attendance">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="SAMS">
+  
+    <title>SAMS</title>
+    <link rel="icon" href="../img/icon.png"  type="image/x-icon" />
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="../fonts/font-awesome.min.css" type="text/css" media="screen">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="../css/material.min.css" rel="stylesheet">
+    <link href="../css/ripples.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link href="../css/settings.css" rel="stylesheet">
+  </head>
+
+  <body style="background:#eee">
+
+    
+      
+      <div class="content-wrap">
+        <header class="slider-area" id="home">      
+          <div class="container">
+            <div class="col-md-12">
+                <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
+                  <div class="container">
+                    <div class="navbar-header">
+                      <a class="logo-left " href="/SAMS/home.html"><i class="fa fa-check-square-o"></i>SAMS</a>
+                    </div>
+                    
+                  </div>
+                </div>
+            </div>     
+          </div>  
+          <!-- Main Slider Section -->
+          
+          <div class="container" style="position:relative;top:100px">
+
+             <center>
+            
+            <h2 style="color:#999;padding-bottom:1.2em;font-weight:100; " >Student<strong> Login</strong></h2>
+              <div class="col-md-4 col-md-offset-4">
+                <div id="message" class="bg-primary"></div>
+
+                <form>
+                  <div class="form-group">
+                    <label>Email Id :</label>
+                    <input type="email" class="form-control" placeholder="Enter Your Email" id="email" required autofocus >
+                  </div>
+                  <div class="form-group">
+                    <label>Password :</label>
+                    <input type="password" class="form-control" placeholder="Enter Password" id="password" required>
+                  </div>
+
+                </form>
+                  <div class="form-group col-md-6">
+                    <button type="submit" class="btn btn-info" id="login" onclick="location.href='index.html'">Login</button>
+                    
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="reset" class="btn btn-danger" required>
+                  </div>
+
+                <form> 
+                  <div class="form-group">
+                    <label>Forget Password ? <a href="">Enter Your Email Below</a></label> <hr>
+                    <input type="email" class="form-control" placeholder="Enter Your Email" required  >
+                  </div>
+                  <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-primary">Get Instructions Through Email</button>
+                    
+                  </div>
+
+
+                </form>
+
+              </div>
+           </center>
+
+          </div>
+
+
+        <div id="loader">
+         <div class="loader-inner ball-triangle-path">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ripples.min.js"></script>
+    <script src="../js/material.min.js"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/jquery.mmenu.min.all.js"></script> 
+    <script src="../js/count-to.js"></script>   
+    <script src="../js/jquery.inview.min.js"></script>
+    <script src="../js/form-validator.min.js"></script>  
+    <script src="../js/contact-form-script.js"></script>     
+    <script src="../js/main-alt.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/jquery.nav.js"></script>      
+    <script src="../js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../js/jquery.themepunch.tools.min.js"></script>
+    
+
+    <script>
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+             jQuery('.tp-banner').show().revolution({
+              dottedOverlay: "none",
+              delay: 16000,
+              startwidth: 1170,
+              startheight: 650,
+              hideThumbs: 200,
+              thumbWidth: 100,
+              thumbHeight: 50,
+              thumbAmount: 5,
+              navigationType: "bullet",
+              navigationArrows: "solo",
+              navigationStyle: "preview4",
+              touchenabled: "on",
+              onHoverStop: "on",
+              swipe_velocity: 0.7,
+              swipe_min_touches: 1,
+              swipe_max_touches: 1,
+              drag_block_vertical: false,
+              parallax: "mouse",
+              parallaxBgFreeze: "on",
+              parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+              keyboardNavigation: "off",
+              navigationHAlign: "center",
+              navigationVAlign: "bottom",
+              navigationHOffset: 0,
+              navigationVOffset: 20,
+              soloArrowLeftHalign: "left",
+              soloArrowLeftValign: "center",
+              soloArrowLeftHOffset: 20,
+              soloArrowLeftVOffset: 0,
+              soloArrowRightHalign: "right",
+              soloArrowRightValign: "center",
+              soloArrowRightHOffset: 20,
+              soloArrowRightVOffset: 0,
+              shadow: 0,
+              fullWidth: "on",
+              fullScreen: "off",
+              spinner: "spinner1",
+              stopLoop: "off",
+              stopAfterLoops: -1,
+              stopAtSlide: -1,
+              shuffle: "off",
+              autoHeight: "off",
+              forceFullWidth: "off",
+              hideThumbsOnMobile: "off",
+              hideNavDelayOnMobile: 1500,
+              hideBulletsOnMobile: "off",
+              hideArrowsOnMobile: "off",
+              hideThumbsUnderResolution: 0,
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              startWithSlide: 0,
+              videoJsPath: "rs-plugin/videojs/",
+              fullScreenOffsetContainer: ""
+            });
+        });
+
+    </script>
+    <script type="text/javascript">
+        $("#login").click(function(){
+
+            var email=$("#email").val();
+            var password=$("#password").val();
+            
+            $.ajax({
+                url:"verify.php",
+                type:"post",
+                data:{'email':email,
+                        'password':password},
+                success:function(data){
+
+                    if(data){
+                        
+                       
+                        sessionStorage.setItem("login", "success");
+                        localStorage['login']="success";
+                        sessionStorage.setItem('sid', data);
+                        localStorage['sid']=data;
+                        //window.location = "index";
+                        location.replace("index");
+                       
+                    
+                    }else{
+                        
+                        alert("Invalid Credentials");
+                        
+                    }
+                }
+            });
+        });
+        
+    </script>
+  </body>
+
+
+</html>
